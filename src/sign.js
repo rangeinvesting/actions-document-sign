@@ -6,10 +6,10 @@ const path = require("path");
 const run = async () => {
   try {
     const label = null;
-    const verification = null;
-    const author = null;
+    const verification = "TESTE2";
+    const author = "Teste";
 
-    const template = fs.readFileSync("./../templates/cute.html", "utf8");
+    const template = fs.readFileSync("./templates/cute.html", "utf8");
 
     const url = "https://github.com/";
 
@@ -19,8 +19,10 @@ const run = async () => {
       author,
     };
 
-    fs.writeFileSync("./da.html", tmpl(template, data));
-  } catch (error) {}
+    fs.writeFileSync("da.html", tmpl(template, data));
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 run();
