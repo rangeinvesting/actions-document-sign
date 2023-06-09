@@ -30,11 +30,21 @@
   }
 </style>
 <fieldset class="signature">
-  <legend>Electronic Signature</legend>
+  <legend>Assinatura do Técnico/Executor</legend>
   <ul>
-    <li>published <a href="{%=o.object.url%}">{%=o.object.label%}</a></li>
-    <li>at <span class="info">{%=o.author.date%}</span></li>
-    <li>by <span class="info">{%=o.author.name%} <a href="mailto:{%=o.author.email%}">&lt;{%=o.author.email%}&gt;</a></span></li>
-    <li>signed with <span class="info">{%=o.object.key%}</span></li>
+    <li>Situação: <a href="{%=o.object.url%}">{%=o.object.label%}</a></li>
+    <li>Nome <span class="info">{%=o.author%}</span></li>
+    <li>Data e hora <span class="info">{%=o.date%} <a href="mailto:{%=o.author.email%}">&lt;{%=o.author.email%}&gt;</a></span></li>
+    <li>Chave <span class="info">{%=o.object.key%}</span></li>
+  </ul>
+</fieldset>
+
+<fieldset class="signature">
+  <legend>Assinatura do Técnico/Executor</legend>
+  <ul>
+    <li>Situação: <a href="{%=o.object.url%}">{%=o.object.label%}</a></li>
+    <li>Nome <span class="info">{%=o.author%}</span></li>
+    <li>Data e hora <span class="info">{%=o.date%} <a href="mailto:{%=o.author.email%}">&lt;{%=o.author.email%}&gt;</a></span></li>
+    <li>Chave <span class="info">{%=o.object.key2%}</span></li>
   </ul>
 </fieldset>
